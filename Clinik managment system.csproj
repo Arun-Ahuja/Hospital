@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{034D17DE-10D9-43E4-AB49-5A2E09EA4C67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clinik_managment_system</RootNamespace>
+    <AssemblyName>Clinik managment system</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.Designer.cs">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatient.Designer.cs">
+      <DependentUpon>frmPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPatient.Designer.cs">
+      <DependentUpon>ViewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vital_sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vital_sign.Designer.cs">
+      <DependentUpon>vital_sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="investigation and Managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="investigation and Managment.Designer.cs">
+      <DependentUpon>investigation and Managment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Vital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Vital.Designer.cs">
+      <DependentUpon>View_Vital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDoctor.Designer.cs">
+      <DependentUpon>AddDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cash bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cash bill.Designer.cs">
+      <DependentUpon>cash bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="enquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enquiry.Designer.cs">
+      <DependentUpon>enquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appointment.Designer.cs">
+      <DependentUpon>appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientHistory.Designer.cs">
+      <DependentUpon>PatientHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatient.resx">
+      <DependentUpon>frmPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPatient.resx">
+      <DependentUpon>ViewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vital_sign.resx">
+      <DependentUpon>vital_sign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="investigation and Managment.resx">
+      <DependentUpon>investigation and Managment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Vital.resx">
+      <DependentUpon>View_Vital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDoctor.resx">
+      <DependentUpon>AddDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cash bill.resx">
+      <DependentUpon>cash bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enquiry.resx">
+      <DependentUpon>enquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appointment.resx">
+      <DependentUpon>appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientHistory.resx">
+      <DependentUpon>PatientHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\forbidden.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meyer_Ortho_and_Rehab_Hospital.original.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Doctor-Male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clinic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PR-banner-500x271.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clinic-management-system.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient registration 1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waiting Queu 2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vital signs 3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctar consultation 4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drug dispensari 5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Billing 6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Re schedule appointment.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-pt-registration-header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vital-signs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vital-signs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PT REg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pet Que.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vital-signs1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DR consultation.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drug dispensari.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Billing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Re schedule appointment1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reschedule-Appointment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Appointment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Appointment1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Appointment3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billing1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billing.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
